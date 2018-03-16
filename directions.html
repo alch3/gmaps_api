@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Displaying text directions with <code>setPanel()</code></title>
+  <link rel="stylesheet" type="text/css" href="./css/directions.css">
+</head>
+
+<body>
+<div id="floating-panel">
+  <strong>Votre adresse:</strong>
+  <input id="start" type="text">
+  <br>
+
+  <strong>Crèche : </strong>
+  <!-- ToDo: The destination should be replaced by the address of the nursery the user has selected -->
+  <span id="end">23 rue Henri Chevreau 75020 Paris</span>
+  <br>
+
+  <strong>Vous vous déplacez : </strong>
+  <select id="travel-mode">
+    <option value="DRIVING">en voiture</option>
+    <option value="TRANSIT">en transports</option>
+    <option value="WALKING">à pied</option>
+    <option value="BICYCLING">à vélo</option>
+  </select>
+  <br>
+
+  <input id="submit" type="button" value="Calculer mon itinéraire">
+</div>
+
+<div id="right-panel"></div>
+
+<div id="map"></div>
+
+<script src="./js/directions.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv-tOrTA8OQKDANq7uUGMTBH2Gd7AP__0&callback=initMap"></script>
+</body>
+</html>

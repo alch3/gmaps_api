@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geocoding service</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/geocoding.css">
+</head>
+<body>
+<div id="floating-panel">
+  <input id="address" type="textbox" value="Paris, France">
+  <input id="submit" type="button" value="Geocode">
+  <input id="lat" type="text" value="lat">
+  <input id="lng" type="text" value="lng">
+</div>
+<div id="map"></div>
+<script src="./js/geocoding.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv-tOrTA8OQKDANq7uUGMTBH2Gd7AP__0&callback=initMap">
+</script>
+</body>
+</html>
